@@ -3,13 +3,22 @@
     padding: 0;
     margin: 0;
 }
+
+body {
+    background: 
+        url(../images/background.svg),
+        #6897d5;
+
+    background-attachment: fixed;
+    background-size: cover;
+}
 /* END base */
 
 /* header */
 /* nav */
 #nav-base {
     background-color: #fff;
-    box-shadow: 0 0 10px 0 #ccc;
+    box-shadow: 0 0 2px 0 #646464;
 }
 /* END nav */
 /* END header */
