@@ -1,0 +1,38 @@
+/* base */
+h2 {
+    font-size: 2rem;
+}
+
+a {
+    color: #505050;
+}
+/* END base */
+
+/* content */
+#content {
+    background-color: transparent;
+}
+
+/* login form */
+.login-form-box {
+    width: 500px;
+    background-color: #fff;
+    padding: 1.5rem 2rem 2rem 2rem;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 0 #505050;
+    margin-bottom: 5rem;
+}
+
+#btn-submit {
+    background-color: #e1b136;
+    color: #fff;
+    border-radius: 20px;
+}
+
+#btn-submit:active, 
+#btn-submit:first-child:active,
+#btn-submit:first-child:hover {
+    background-color: #cc9c23;
+}
+/* END login form */
+/* END content */

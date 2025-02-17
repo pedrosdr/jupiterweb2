@@ -6,14 +6,46 @@
 {% endblock %}
 
 {% block content %}
-<section id="section-login">
+<section id="content">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 d-flex justify-content-center align-items-center">
-
+            <div class="col-md-6">
+                <div class="login-form-box">
+                    <form action="/login" method="post">
+                        <h2 class="text-center mb-3">Entrar</h2>
+                        <p>
+                            <span class="text-secondary">Ainda não possui uma conta?</span>
+                            <a href="/login">Registre-se</a>
+                        </p>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Número USP ou email</label>
+                            <div class="input-group">
+                                <label for="email" class="input-group-text">
+                                    <i class="fa-solid fa-user"></i>
+                                </label>
+                                <input id="email" type="email" class="form-control" name="email" placeholder="e.g. adalovelace@usp.br" aria-label="email">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="password" class="form-label">Sua senha</label>
+                            <div class="input-group">
+                                <label for="password" class="input-group-text">
+                                    <i class="fa-solid fa-lock"></i>
+                                </label>
+                                <input id="password" type="password" class="form-control" name="password" placeholder="e.g. babbage#1A7B" aria-label="senha">
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button id="btn-submit" type="submit" class="btn">Entrar</button>
+                        </div>
+                        <div class="mt-2">
+                            <a href="/login">Esqueci a senha</a>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="col-md-6 d-flex justify-content-center align-items-center">
-
+            <div class="col-md-6">
+                Sistema de Gestão Acadêmica da Pró-Reitoria de Graduação
             </div>
         </div>
     </div>
