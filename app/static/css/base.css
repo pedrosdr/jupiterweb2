@@ -15,6 +15,9 @@ body {
 /* END base */
 
 /* header */
+header {
+    height: 66px;
+}
 /* nav */
 #nav-base {
     background-color: #fff;

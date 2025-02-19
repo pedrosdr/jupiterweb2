@@ -9,30 +9,26 @@
 <section id="content">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-7 d-flex align-items-center justify-content-center">
+                <div class="p-4">
+                    <div class="mb-4">
+                        <img src="{{ url_for('static', filename='images/jupiterweb-logo2.svg') }}" alt="Jupiterweb" height="50">
+                    </div>
+                    <h2>Sistema de Gestão Acadêmica da Pró-Reitoria de Graduação</h2>
+                </div>
+            </div>
+            <div class="col-md-5 d-flex align-items-center justify-content-center">
                 <div class="login-form-box">
                     <form action="/login" method="post">
-                        <h2 class="text-center mb-3">Entrar</h2>
-                        <p>
-                            <span class="text-secondary">Ainda não possui uma conta?</span>
-                            <a href="/login">Registre-se</a>
-                        </p>
+                        <h1 class="text-center mb-3">Entrar</h1>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Número USP ou email</label>
                             <div class="input-group">
-                                <label for="email" class="input-group-text">
-                                    <i class="fa-solid fa-user"></i>
-                                </label>
-                                <input id="email" type="email" class="form-control" name="email" placeholder="e.g. adalovelace@usp.br" aria-label="email">
+                                <input id="email" type="email" class="form-control" name="email" placeholder="E-mail ou Número USP" aria-label="email">
                             </div>
                         </div>
                         <div class="mb-4">
-                            <label for="password" class="form-label">Sua senha</label>
                             <div class="input-group">
-                                <label for="password" class="input-group-text">
-                                    <i class="fa-solid fa-lock"></i>
-                                </label>
-                                <input id="password" type="password" class="form-control" name="password" placeholder="e.g. babbage#1A7B" aria-label="senha">
+                                <input id="password" type="password" class="form-control" name="password" placeholder="Senha" aria-label="senha">
                             </div>
                         </div>
                         <div class="d-grid gap-2">
@@ -41,11 +37,12 @@
                         <div class="mt-2">
                             <a href="/login">Esqueci a senha</a>
                         </div>
+                        <div class="mt-2">
+                            <span class="text-secondary">Ainda não possui uma conta?</span>
+                            <a href="/login">Registre-se</a>
+                        </div>
                     </form>
                 </div>
-            </div>
-            <div class="col-md-6">
-                Sistema de Gestão Acadêmica da Pró-Reitoria de Graduação
             </div>
         </div>
     </div>
