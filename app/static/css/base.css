@@ -23,5 +23,23 @@ header {
     background-color: #fff;
     box-shadow: 0 0 2px 0 #646464;
 }
+
+@media (min-width: 768px) {
+    .navbar-right {
+        margin-left: auto;
+    }
+}
+
+.nav-login {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #D65455;
+    color: #fff;
+    border-radius: 5px;
+    min-width: 70px;
+    line-height: 2.5;
+    transition: all 0.3s ease-in-out;
+}
 /* END nav */
 /* END header */
