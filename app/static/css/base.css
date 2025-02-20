@@ -34,12 +34,18 @@ header {
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    background-color: #D65455;
+    background-color: #e1b136;
     color: #fff;
     border-radius: 5px;
     min-width: 70px;
     line-height: 2.5;
     transition: all 0.3s ease-in-out;
+}
+
+.nav-login:active, 
+.nav-login:first-child:active,
+.nav-login:first-child:hover {
+    background-color: #cc9c23;
 }
 /* END nav */
 /* END header */
